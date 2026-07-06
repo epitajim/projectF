@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fラン大学は日本の宝プロジェクト</title>
+<meta name="description" content="いわゆる「Fラン大学」を、データと事実から見つめ直すプロジェクト。入試難易度・補助金などのリサーチデータを公開しています。">
+<style>
+:root{
+  --bg:#f6f7f9; --card:#fff; --ink:#1a2233; --sub:#66707f; --line:#e3e6eb;
+  --accent:#2563eb; --gold:#b45309; --goldbg:#fef3c7;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Yu Gothic UI","Noto Sans JP",Meiryo,sans-serif;background:var(--bg);color:var(--ink);font-size:15px;line-height:1.7}
+a{color:var(--accent)}
+.wrap{max-width:960px;margin:0 auto;padding:0 16px}
+header{background:var(--card);border-bottom:1px solid var(--line)}
+.hrow{display:flex;align-items:center;justify-content:space-between;padding:14px 0;gap:12px;flex-wrap:wrap}
+.logo{font-weight:800;font-size:17px;letter-spacing:.02em}
+.logo .t{background:var(--goldbg);color:var(--gold);padding:1px 8px;border-radius:6px;margin-right:6px;font-size:14px}
+nav.g{display:flex;gap:16px;font-size:13px;flex-wrap:wrap}
+nav.g a{color:var(--sub);text-decoration:none}
+nav.g a:hover{color:var(--accent)}
+.hero{padding:44px 0 36px}
+.hero h1{font-size:30px;margin:0 0 12px;line-height:1.4}
+.hero h1 .em{color:var(--gold)}
+.hero p{max-width:640px;color:var(--sub);margin:0}
+section{padding:26px 0}
+h2{font-size:19px;margin:0 0 14px;display:flex;align-items:center;gap:8px}
+h2 .bar{display:inline-block;width:5px;height:20px;background:var(--gold);border-radius:3px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px;position:relative}
+.card h3{margin:0 0 8px;font-size:16px}
+.card p{margin:0;font-size:13px;color:var(--sub)}
+.card a.cover{position:absolute;inset:0;border-radius:12px}
+.card:hover{border-color:var(--accent);box-shadow:0 2px 10px rgba(37,99,235,.08)}
+.badge{display:inline-block;font-size:11px;padding:2px 9px;border-radius:999px;background:#e0e7ff;color:#3730a3;margin-bottom:8px;font-weight:600}
+.badge.soon{background:#f1f3f6;color:var(--sub)}
+.stats{display:flex;gap:18px;flex-wrap:wrap;margin-top:12px;font-size:12px;color:var(--sub)}
+.stats b{color:var(--ink);font-size:15px}
+ul.news{list-style:none;margin:0;padding:0;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+ul.news li{display:flex;gap:12px;align-items:baseline;padding:12px 16px;border-top:1px solid var(--line);flex-wrap:wrap}
+ul.news li:first-child{border-top:none}
+ul.news .d{font-size:12px;color:var(--sub);font-variant-numeric:tabular-nums;white-space:nowrap}
+ul.news .tag{font-size:11px;padding:1px 8px;border-radius:999px;background:var(--goldbg);color:var(--gold);white-space:nowrap;font-weight:600}
+ul.news a{text-decoration:none}
+.about{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px;font-size:14px}
+.about p{margin:0 0 10px}
+footer{border-top:1px solid var(--line);margin-top:36px;padding:24px 0 48px;font-size:12px;color:var(--sub)}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap hrow">
+    <div class="logo"><span class="t">宝</span>Fラン大学は日本の宝プロジェクト</div>
+    <nav class="g">
+      <a href="#news">新着情報</a>
+      <a href="#research">リサーチ</a>
+      <a href="#about">プロジェクトについて</a>
+      <a href="#future">今後の展開</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="hero">
+    <h1>「Fラン大学」を、<br>データで見つめ直す。<span class="em">それは日本の宝かもしれない。</span></h1>
+    <p>誰でも入れる大学は「価値がない」のか。ボーダーフリー(BF)大学の実像を、入試難易度・補助金・経営データなどの一次資料から丁寧に読み解き、公開していくプロジェクトです。</p>
+  </div>
+
+  <section id="news">
+    <h2><span class="bar"></span>新着情報</h2>
+    <ul class="news" id="newslist"></ul>
+  </section>
+
+  <section id="research">
+    <h2><span class="bar"></span>リサーチデータ</h2>
+    <div class="cards">
+      <div class="card">
+        <span class="badge">公開中</span>
+        <h3>BF大学と補助金の関係 データベース</h3>
+        <p>河合塾「2026年度入試難易度予想」と私立大学等経常費補助金(586校)を大学単位で突合。BF率・補助金額で検索/絞り込み/散布図表示ができます。</p>
+        <div class="stats"><span><b>590</b> 校収録</span><span><b>224</b> 校にBF方式</span><span><b>83</b> 校が全方式BF</span></div>
+        <a class="cover" href="research/bf-hojokin/" aria-label="BF大学と補助金の関係データベースを開く"></a>
+      </div>
+      <div class="card">
+        <span class="badge soon">準備中</span>
+        <h3>次のリサーチ(企画中)</h3>
+        <p>定員充足率・退学率・留学生比率・経営指標など、BF大学の実像に迫る次のデータセットを準備中です。リクエストも受け付け予定。</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2><span class="bar"></span>プロジェクトについて</h2>
+    <div class="about">
+      <p>偏差値がつかないほど入りやすい大学――いわゆる「BF(ボーダーフリー)大学」「Fラン大学」は、しばしば揶揄の対象になります。しかしそこには、学び直しの場、地域の若者の受け皿、留学生の入口、専門職養成など、偏差値では測れない役割があるのではないか。</p>
+      <p>このプロジェクトは、賛美でも断罪でもなく、まず「事実を並べて見られる状態」をつくることを目的に、一次資料ベースのデータを整備・公開していきます。</p>
+      <p style="margin:0;color:var(--sub);font-size:12px">運営: yushi / お問い合わせ: epitajim@gmail.com</p>
+    </div>
+  </section>
+
+  <section id="future">
+    <h2><span class="bar"></span>今後の展開</h2>
+    <div class="cards">
+      <div class="card"><span class="badge soon">準備中</span><h3>オンラインショップ</h3><p>プロジェクトグッズや冊子版リサーチレポートの販売を予定しています。</p></div>
+      <div class="card"><span class="badge soon">準備中</span><h3>記事の寄稿</h3><p>BF大学の教職員・卒業生・在学生・研究者からの寄稿を受け付ける予定です。</p></div>
+      <div class="card"><span class="badge soon">構想中</span><h3>大学別ページ</h3><p>1校ずつの基本情報・データ・ストーリーをまとめたページ群を構想しています。</p></div>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <div class="wrap">
+    © Fラン大学は日本の宝プロジェクト。掲載データの出典・注意事項は各リサーチページに記載しています。データの正確性は保証されません。引用の際は一次資料をご確認ください。
+  </div>
+</footer>
+
+<script src="news.js"></script>
+<script>
+const box = document.getElementById('newslist');
+box.innerHTML = NEWS.map(n=>{
+  const t = n.url ? `<a href="${n.url}">${n.title}</a>` : n.title;
+  return `<li><span class="d">${n.date}</span><span class="tag">${n.tag}</span><span>${t}</span></li>`;
+}).join('');
+</script>
+</body>
+</html>
