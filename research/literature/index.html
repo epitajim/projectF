@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>「Fラン大学」研究文献レビュー — 論文・調査資料でみるBF大学の実像</title>
+<meta name="description" content="いわゆる「Fラン大学」(BF大学・マージナル大学・限界大学)に関する国内の主要な論文・書籍・調査資料を整理した文献レビュー。">
+<style>
+:root{
+  --bg:#f6f7f9; --card:#fff; --ink:#1a2233; --sub:#66707f; --line:#e3e6eb;
+  --accent:#2563eb; --gold:#b45309; --goldbg:#fef3c7;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Yu Gothic UI","Noto Sans JP",Meiryo,sans-serif;background:var(--bg);color:var(--ink);font-size:15px;line-height:1.8}
+a{color:var(--accent)}
+.wrap{max-width:880px;margin:0 auto;padding:20px 16px 60px}
+h1{font-size:24px;margin:8px 0 6px;line-height:1.4}
+.lead{color:var(--sub);font-size:13px;margin:0 0 18px}
+h2{font-size:18px;margin:36px 0 14px;display:flex;align-items:center;gap:8px;line-height:1.5}
+h2 .bar{display:inline-block;flex:none;width:5px;height:20px;background:var(--gold);border-radius:3px}
+h3{font-size:15px;color:var(--accent);margin:24px 0 10px}
+.intro{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px;font-size:14px}
+.intro p{margin:0 0 10px}
+.intro p:last-child{margin:0}
+.note{font-size:12px;color:var(--sub)}
+table{border-collapse:collapse;width:100%;font-size:13px;margin:14px 0;background:var(--card);border-radius:10px;overflow:hidden}
+th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+th{background:#eef1f5;white-space:nowrap}
+.entry{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin:0 0 12px}
+.entry.star{border-left:5px solid var(--gold);background:#fffdf5}
+.entry-title{margin:0 0 6px;font-weight:700;line-height:1.6;font-size:14px}
+.badge{display:inline-block;font-size:11px;font-weight:600;color:#3730a3;background:#e0e7ff;border-radius:999px;padding:1px 9px;margin-right:6px;vertical-align:middle;white-space:nowrap}
+.entry.star .badge{background:var(--goldbg);color:var(--gold)}
+.entry p{margin:4px 0;font-size:13px}
+.entry .links{font-size:12px}
+.entry .links a{word-break:break-all}
+.pospoint{color:var(--gold);font-size:12.5px;background:var(--goldbg);border-radius:6px;padding:6px 10px;margin-top:8px !important}
+ul.compact{padding-left:20px;margin:6px 0}
+ul.compact li{margin-bottom:5px;font-size:13px}
+.summary{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 20px}
+.summary li{margin-bottom:8px;font-size:13.5px}
+footer{margin-top:36px;font-size:12px;color:var(--sub);line-height:1.8;border-top:1px solid var(--line);padding-top:16px}
+@media (max-width:600px){h1{font-size:20px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav style="font-size:12px;margin-bottom:6px"><a href="../../" style="color:var(--accent);text-decoration:none">← Fラン大学は日本の宝プロジェクト トップへ</a></nav>
+
+<h1>「Fラン大学」研究文献レビュー<br>— 論文・調査資料でみる「ボーダーフリー大学」の実像</h1>
+<p class="lead">最終更新: 2026年7月13日｜リンクは同日時点で確認</p>
+
+<div class="intro">
+<p>「Fラン大学」という俗称で語られる大学群は、学術研究の世界では<strong>「ボーダーフリー(BF)大学」「マージナル大学」「限界大学」「非選抜的大学」</strong>などの用語で、実証的な研究の対象となってきた。本ページは、これらの大学に関する国内の主要な論文・書籍・調査資料を整理したものである。</p>
+<p>先行研究を通読すると、俗説とは異なる像が浮かび上がる。<strong>非難関大学への進学でも経済的リターンはプラスであること(島 2015)、大学教育の効用は銘柄大学に限られないこと(濱中 2013)、これらの大学が多様な学生の受け皿・成長の場として社会的意義を持つこと(居神 2010)、教育改善に真摯に取り組む教員・大学が数多く存在すること(葛城の一連の研究)</strong>などである。<span style="color:var(--gold);font-weight:700">★印</span>は、こうした「ポジティブ・エビデンス」として特に重要な文献を示す。</p>
+</div>
+
+<h2><span class="bar"></span>1. 用語の整理 — 「Fラン」は学術的にどう呼ばれてきたか</h2>
+
+<p style="font-size:14px">「Fランク」の語は、もともと<strong>河合塾が2000年度入試向けの難易度予想で導入した区分</strong>に由来する。不合格者が少なすぎて合否のボーダーライン(境界偏差値)が設定できない大学を「Fランク」(Border-Free、のちに「BF」表記)としたものであり、本来は「合否判定線が引けない」という技術的な意味しか持たない(<a href="https://ja.wikipedia.org/wiki/%E3%83%9C%E3%83%BC%E3%83%80%E3%83%BC%E3%83%95%E3%83%AA%E3%83%BC">Wikipedia「ボーダーフリー」</a>)。その後インターネット上で「Fラン大学」が侮蔑的なスラングとして拡散し、本来の定義から離れて「低偏差値大学一般」を指す言葉として濫用されている(<a href="https://diamond.jp/articles/-/370129?page=2">ダイヤモンド・オンラインによる用語の再検討記事</a>)。</p>
+
+<table>
+<tr><th>用語</th><th>主な提唱者・使用者</th><th>含意</th></tr>
+<tr><td>ボーダーフリー(BF)大学</td><td>河合塾(区分)/葛城浩一ほか(研究用語)</td><td>入試で合否ボーダーが設定できない大学。学術研究で最も定着した中立的用語</td></tr>
+<tr><td>マージナル大学</td><td>居神浩(2010)</td><td>大学教育と労働市場の「周辺(マージン)」に位置する大学。批判ではなく社会的意義の再定義のための概念</td></tr>
+<tr><td>ノンエリート大学生</td><td>居神浩ほか</td><td>エリート型大学教育の想定から外れた学生層。キャリア教育論の文脈で使用</td></tr>
+<tr><td>限界大学</td><td>小川洋(2017)</td><td>「限界集落」になぞらえ、定員割れで経営が行き詰まる構造を持つ大学</td></tr>
+<tr><td>非選抜的大学</td><td>小杉礼子ほか(労働研究)</td><td>入学者選抜が実質的に機能していない大学。就職研究の文脈で使用</td></tr>
+<tr><td>教育困難大学</td><td>朝比奈なを(東洋経済オンライン連載)</td><td>「教育困難校」の大学版としてジャーナリズムで使われる呼称</td></tr>
+<tr><td>ユニバーサル段階の大学</td><td>マーチン・トロウ</td><td>進学率50%超の「ユニバーサル・アクセス」段階では多様な大学の出現は必然、とする高等教育論の古典的枠組み</td></tr>
+</table>
+
+<p class="note">CiNii・J-STAGEで検索する際は「Fラン」ではなく「ボーダーフリー大学」「BF大学」「マージナル大学」「ノンエリート」「限界大学」「定員割れ」「非選抜」「大学全入」などの語を使うと学術文献にたどり着ける(→ <a href="#search">8. 文献検索ガイド</a>)。</p>
+
+<h2><span class="bar"></span>2. ポジティブ・エビデンス① — 進学の経済的リターン</h2>
+
+<div class="entry star">
+<p class="entry-title"><span class="badge">★ 経済効果</span>島一則「『投資』としてみた大学 非難関でもプラスの収益」日本経済新聞・経済教室(2015年2月、2025年再配信)</p>
+<p>高等教育経済学の代表的研究者による分析。大学進学を投資とみなして収益率を計算すると、<strong>難関大学でない私立大学への進学でも収益率はプラス</strong>であり、「行く価値がない」という俗説は経済学的には支持されないことを示した。本プロジェクトの趣旨に最も直結するエビデンスの一つ。</p>
+<p class="links">▶ <a href="https://www.nikkei.com/article/DGKKZO86766940W5A210C2CK8000/">日経・経済教室(2015)</a> / <a href="https://www.nikkei.com/article/DGXZQOCD239KN0T20C25A1000000/">再配信版(2025)</a></p>
+<p class="pospoint">ポイント: 「Fランに行っても無駄」への最も強力な反証。偏差値にかかわらず大卒学歴の投資収益はプラス。</p>
+</div>
+
+<div class="entry star">
+<p class="entry-title"><span class="badge">★ 経済効果</span>濱中淳子『検証・学歴の効用』勁草書房、2013年</p>
+<p>データに基づき学歴の効用を検証した実証研究書。大学時代の学びが卒業後の学習習慣を通じて所得形成に寄与するという<strong>「学び習慣仮説」</strong>を提示し、大学教育の効用が一部の銘柄大学に限られるものではないことを論じた。</p>
+<p class="links">▶ <a href="https://www.keisoshobo.co.jp/book/b634641.html">勁草書房・書誌ページ</a> / <a href="https://www.u-tokyo.ac.jp/focus/ja/features/voices004.html">著者インタビュー(UTOKYO VOICES)</a></p>
+<p class="pospoint">ポイント: 「どの大学で学んだか」より「大学でどう学んだか」が卒業後の効用を左右する。</p>
+</div>
+
+<div class="entry">
+<p class="entry-title"><span class="badge">レビュー論文</span>北條雅一「学歴収益率についての研究の現状と課題」『日本労働研究雑誌』No.694、2018年</p>
+<p>国内外の学歴収益率(教育年数が賃金に与える効果)研究を整理したレビュー。日本でも大卒学歴の収益率が安定的にプラスであることを示す研究蓄積を概観できる。個別大学のランクを超えた「大卒であることの価値」を確認するための基礎文献。</p>
+<p class="links">▶ <a href="https://www.jil.go.jp/institute/zassi/backnumber/2018/05/pdf/029-038.pdf">本文PDF(JILPT)</a></p>
+</div>
+
+<div class="entry">
+<p class="entry-title"><span class="badge">論文</span>真鍋亮・島一則「同一大卒者男子における学業成績と期待生涯賃金の関係性—学習効率と雇用効率に着目して」『大学経営政策研究』第14号</p>
+<p>同じ大卒者の中でも、在学中の学業成績が期待生涯賃金と関連することを示した分析。入学時点の偏差値ではなく<strong>入学後の学習</strong>が経済的成果に結びつくことを示唆する。</p>
+<p class="links">▶ <a href="https://ump.p.u-tokyo.ac.jp/resource/9_bulletin14-paper.pdf">本文PDF(東京大学 大学経営・政策コース)</a></p>
+</div>
+
+<div class="entry">
+<p class="entry-title"><span class="badge">論文</span>黒田雄太「大学全入時代における大学進学を考える」『日本労働研究雑誌』No.782、2025年9月</p>
+<p>進学率5割超の時代における大学進学の意味を経済学の視点から再検討。大学を一括りにせず選抜性・教育内容の異質性を前提とした分析の必要性、「消費としての大学教育」の側面も考慮すべきことを指摘する。最新の論点整理として有用。</p>
+<p class="links">▶ <a href="https://www.jil.go.jp/institute/zassi/backnumber/2025/09/pdf/040-051.pdf">本文PDF(JILPT)</a></p>
+</div>
+
+<h2><span class="bar"></span>3. ポジティブ・エビデンス② — 社会的意義とキャリア形成(「マージナル大学」論)</h2>
+
+<div class="entry star">
+<p class="entry-title"><span class="badge">★ 社会的意義</span>居神浩「ノンエリート大学生に伝えるべきこと—『マージナル大学』の社会的意義」『日本労働研究雑誌』No.602、2010年9月</p>
+<p>「マージナル大学」概念を提起した記念碑的論文。大学教育と労働市場の周辺に位置する大学を切り捨てるのではなく、<strong>ノンエリート学生が社会に出て生き抜く力を身につける場としての社会的意義</strong>を正面から論じた。「Fラン不要論」への学術側からの最初期の本格的な応答といえる。</p>
+<p class="links">▶ <a href="https://www.jil.go.jp/institute/zassi/backnumber/2010/09/pdf/027-038.pdf">本文PDF(JILPT)</a></p>
+<p class="pospoint">ポイント: マージナル大学は「社会への包摂装置」。存在そのものに公共的な価値がある、という理論的支柱。</p>
+</div>
+
+<div class="entry star">
+<p class="entry-title"><span class="badge">★ キャリア教育</span>居神浩 編著『ノンエリートのためのキャリア教育論—適応と抵抗そして承認と参加』法律文化社、2015年</p>
+<p>マージナル大学論を発展させた編著書。ノンエリート大学生に対するキャリア教育を「労働市場への適応」だけでなく「不当な働かせ方への抵抗」「承認と参加」まで含めて構想する。BF大学の教育実践の理論的な到達点の一つ。</p>
+<p class="links">▶ <a href="https://cir.nii.ac.jp/crid/1130282271768288640">CiNii Research</a> / <a href="https://cir.nii.ac.jp/crid/1521980705300824192">書評(CiNii)</a></p>
+</div>
+
+<div class="entry">
+<p class="entry-title"><span class="badge">論文</span>居神浩「学生の多様化を正面から見ない大学論への絶望と希望」『高等教育研究』第21集、2018年</p>
+<p>マージナル大学概念の提起から7年を経て、多様化する学生に向き合わない大学論を批判しつつ、ノンエリート大学生に伝えるべき教育内容とその実践可能性を再考した論文。タイトルどおり「希望」の側に軸足を置く。</p>
+<p class="links">▶ <a href="https://www.jstage.jst.go.jp/article/jaher/21/0/21_127/_article/-char/ja/">J-STAGE</a></p>
+</div>
+
+<div class="entry">
+<p class="entry-title"><span class="badge">論文</span>小杉礼子「大学生の進路選択と就職活動」『高等教育研究』第11集、2008年</p>
+<p>労働政策研究の第一人者による論文。大学進学者の増加のなかで非選抜的な大学が増え、そこでの進路形成支援が重要課題となることをいち早く指摘した。BF大学の就職支援を論じる際の基礎文献。</p>
+<p class="links">▶ <a href="https://www.jstage.jst.go.jp/article/jaher/11/0/11_85/_pdf">本文PDF(J-STAGE)</a></p>
+</div>
+
+<h2><span class="bar"></span>4. ポジティブ・エビデンス③ — 教育実践・教育改善の努力(葛城浩一のBF大学研究群ほか)</h2>
+
+<p style="font-size:14px">神戸大学の<strong>葛城浩一</strong>(元・香川大学)は、「ボーダーフリー大学」を冠した実証研究を10年以上継続してきた、この分野の第一人者である。その研究群は、BF大学の学生・教員が抱える困難を直視しつつ、<strong>教育の質保証に取り組む教員の存在と改善の可能性</strong>を一貫して描いている(<a href="https://researchmap.jp/read0210841/published_papers">researchmap・業績一覧</a>)。</p>
+
+<div class="entry star">
+<p class="entry-title"><span class="badge">★ 教育の質保証</span>葛城浩一 編『ボーダーフリー大学における学士課程教育の質保証の実現可能性—教員調査報告書』広島大学高等教育研究開発センター ディスカッションペーパーシリーズ No.13(戦略的研究プロジェクトシリーズXI)、2020年</p>
+<p>BF大学教員への大規模調査に基づく報告書。基礎学力や学習習慣に課題のある学生が多い環境で、教育の質保証をどう実現するかを、阻害要因・促進要因の両面から検討。「教育志向の教員」の存在など、<strong>BF大学内部の教育改善の営みを実証的に可視化</strong>した。</p>
+<p class="links">▶ <a href="https://rihe.hiroshima-u.ac.jp/wp/wp-content/uploads/2020/05/ee96d5655f0029cebf52c8edd1f61691-2.pdf">本文PDF(広島大学RIHE)</a></p>
+<p class="pospoint">ポイント: 「Fラン大学の教育は空洞」という俗説に対し、質保証に取り組む教員の実像をデータで示す。</p>
+</div>
+
+<div class="entry">
+<p class="entry-title"><span class="badge">論文群</span>葛城浩一による主なBF大学研究(抜粋)</p>
+<ul class="compact">
+<li>「大学全入時代における学生の学習行動—『ボーダーフリー大学』を中心にして」『大学論集』第41集、2010年(<a href="https://iss.ndl.go.jp/books/R100000002-I000010990755-00">NDLサーチ</a>)— BF大学生の学習行動を初期に実証した論文</li>
+<li>「多様化した学生に対する大学と教員—『ボーダーフリー大学』に着目して」『高等教育研究』第21集、2018年</li>
+<li>「ボーダーフリー大学における学士課程教育の質保証の実現可能性—実現を促進する要因についての検討」『大学教育学会誌』40(2)、2019年</li>
+<li>「ボーダーフリー大学教員の学士課程教育の質保証に対する意識」『大学論集』第49集、2017年(<a href="https://ndlsearch.ndl.go.jp/books/R000000004-I028291019">NDLサーチ</a>)</li>
+<li>「『教育志向の教員』の再検討(2)—ボーダーフリー大学の若手教員に着目して」(<a href="https://cir.nii.ac.jp/crid/1520009407645553792">CiNii</a>)</li>
+<li>「ボーダーフリー大学生の学習実態に関する研究—アクティブラーニング型授業を中心に」『香川大学教育研究』第15号、2018年</li>
+<li>「ボーダーフリー大学における研究活動に対する期待と支援」『大学教育学会誌』38(1)、2016年</li>
+</ul>
+<p class="links">▶ 全業績: <a href="https://researchmap.jp/read0210841/published_papers">researchmap(葛城浩一)</a></p>
+</div>
+
+<div class="entry">
+<p class="entry-title"><span class="badge">論文</span>「ボーダーフリー大学における学生調査の意義と課題」(The Significance and the Problems of Student Surveys at "Border-Free University")</p>
+<p>BF大学における学生調査(IR)の活用可能性を論じた論文。学生の実態把握と教育改善サイクルの構築というポジティブな文脈でBF大学を扱う。</p>
+<p class="links">▶ <a href="https://cir.nii.ac.jp/crid/1390009224855342976">CiNii Research</a></p>
+</div>
+
+<div class="entry">
+<p class="entry-title"><span class="badge">論文</span>「ボーダーフリー大学が直面する教育上の課題—授業中の逸脱行動に着目して」</p>
+<p>授業中の私語等の逸脱行動という「教育困難」の実態を直視した論文。課題の可視化は改善の前提であり、実態論とセットで参照したい。</p>
+<p class="links">▶ <a href="https://cir.nii.ac.jp/crid/1050850722278029824">CiNii Research</a></p>
+</div>
+
+<div class="entry">
+<p class="entry-title"><span class="badge">論文</span>山田礼子「大学の機能分化と初年次教育—新入生像をてがかりに」『日本労働研究雑誌』No.629、2012年12月</p>
+<p>全国163大学・約1万9千人の新入生調査から、学生の多様化に対応して初年次教育が機能分化している実態を分析。リメディアル教育との融合やキャリア教育との統合など、<strong>多様な学生を受け止めるための大学側の制度的努力</strong>を示す。</p>
+<p class="links">▶ <a href="https://www.jil.go.jp/institute/zassi/backnumber/2012/12/pdf/031-043.pdf">本文PDF(JILPT)</a></p>
+</div>
+
+<div class="entry">
+<p class="entry-title"><span class="badge">学会・誌</span>日本リメディアル教育学会(JADE)/『リメディアル教育研究』</p>
+<p>基礎学力に課題を抱える学生への学習支援(リメディアル教育)を専門とする学会。学会誌はJ-STAGEで公開されており、BF大学を含む多くの大学での支援実践・効果検証の論文が蓄積されている。「高大接続改革期におけるリメディアル教育」(11巻2号)など。</p>
+<p class="links">▶ <a href="http://www.jade-web.org/guidance/substance.html">学会設立要旨</a> / <a href="https://www.jstage.jst.go.jp/browse/jade/-char/ja">『リメディアル教育研究』(J-STAGE)</a> / <a href="https://www.jstage.jst.go.jp/article/jade/11/2/11_201/_pdf">高大接続改革期におけるリメディアル教育(PDF)</a></p>
+</div>
+
+<div class="entry star">
+<p class="entry-title"><span class="badge">★ 改革事例</span>共愛学園前橋国際大学(大森昭生 学長)—「地方小規模大学」の教育改革モデル</p>
+<p>定員規模の小さい地方私立大学でありながら、学生主体の教育改革・学修成果の可視化で全国的に注目される事例。文部科学省「大学入試のあり方に関する検討会議」ヒアリング資料(2020)では「地方小規模大学・改革を進めている大学の現場から」として自ら現状を報告している。<strong>「小規模・地方・非難関」は教育の質の低さを意味しない</strong>ことを示す代表例。</p>
+<p class="links">▶ <a href="https://www.mext.go.jp/content/20200513-mxt_daigakuc02-000007071_8.pdf">文科省ヒアリング資料PDF</a> / <a href="https://toyokeizai.net/articles/-/871659?display=b">東洋経済オンライン・大森学長インタビュー</a> / <a href="https://between.shinken-ad.co.jp/detail/2020/02/maebashikokusai1.html">Between情報サイト(教学マネジメント)</a></p>
+</div>
+
+<div class="entry">
+<p class="entry-title"><span class="badge">論文</span>「ボリュームゾーンで学生を飛躍的に成長させる大学を目指して」</p>
+<p>学力中下位層(ボリュームゾーン)の学生の成長にコミットする大学像を論じた文献。「入口の偏差値」ではなく「在学中の伸び(教育付加価値)」で大学を評価する視点を提供する。</p>
+<p class="links">▶ <a href="https://cir.nii.ac.jp/crid/1520864092816046592">CiNii Research</a></p>
+</div>
+
+<h2><span class="bar"></span>5. ポジティブ・エビデンス④ — 地域社会への貢献</h2>
+
+<div class="entry star">
+<p class="entry-title"><span class="badge">★ 地域貢献</span>日本政策投資銀行(DBJ)地域企画部「地方創生に資する地方私立大学活性化の方向性—大学自身の生き残りを賭けて」2018年6月</p>
+<p>政策金融機関による調査レポート。地方私立大学が地域の進学機会・人材供給・経済活動に果たす役割を整理し、活性化の方向性を提言する。<strong>地方の非難関私大が消えると地域の人材供給網が崩れる</strong>という、存在意義のマクロな根拠を与える資料。</p>
+<p class="links">▶ <a href="https://www.dbj.jp/topics/region/industry/files/0000030356_file2.pdf">本文PDF(DBJ)</a></p>
+</div>
+
+<div class="entry">
+<p class="entry-title"><span class="badge">論文</span>「地方大学の学部設置戦略と進学者の地域移動—地元占有率に着目して」『大学経営政策研究』第8号</p>
+<p>地方大学が地元出身者の進学先としてどの程度機能しているか(地元占有率)を分析した論文。地方私大が「地元に残って学べる場」を提供している実態を定量的に確認できる。</p>
+<p class="links">▶ <a href="https://www.jstage.jst.go.jp/article/daikei/8/0/8_55/_article/-char/ja/">J-STAGE</a></p>
+</div>
+
+<div class="entry">
+<p class="entry-title"><span class="badge">報告書</span>内閣府経済社会総合研究所「大学等の知と人材を活用した持続可能な地方の創生に関する研究会報告書」(研究会報告書等No.74)ほか</p>
+<p>大学が地域に貢献する上での課題と対応策を整理した政府系報告書。地方小規模大学の地域における機能を論じる際の政策文書として参照できる。</p>
+<p class="links">▶ <a href="https://www.esri.cao.go.jp/jp/esri/prj/hou/hou074/hou74_06.pdf">第4章PDF(ESRI)</a></p>
+</div>
+
+<h2><span class="bar"></span>6. 実態を知るための基礎文献 — 学生・中退・経営</h2>
+
+<h3>6-1. 学生の学習・生活の実態</h3>
+
+<div class="entry">
+<p class="entry-title"><span class="badge">調査</span>ベネッセ教育総合研究所「第4回 大学生の学習・生活実態調査」2021年実施(報告書2022年)</p>
+<p>大学生の学習時間・授業経験・成長実感などを大学タイプ別に把握できる定点調査(第1回2008年〜)。BF大学を含む大学間の比較や経年変化の基礎データとして有用。</p>
+<p class="links">▶ <a href="https://benesse.jp/berd/koutou/research/detail_5772.html">調査ページ</a> / <a href="https://benesse.jp/berd/up_images/research/4_daigaku_chousa_all.pdf">データ集PDF</a> / <a href="https://benesse.jp/berd/research/koutou/university.html">シリーズ一覧</a></p>
+</div>
+
+<div class="entry">
+<p class="entry-title"><span class="badge">調査研究</span>JILPT 調査シリーズNo.138『大学等中退者の就労と意識に関する研究』2015年</p>
+<p>大学等中退者へのインタビュー・アンケートに基づく本格的調査。中退の背景要因(経済問題・学業不振・不本意入学等)と中退後のキャリアを分析しており、BF大学で相対的に高いとされる中退問題を考えるための一次資料。</p>
+<p class="links">▶ <a href="https://www.jil.go.jp/institute/research/2015/138.html">概要ページ</a> / <a href="https://www.jil.go.jp/institute/research/2015/documents/0138.pdf">本文PDF</a></p>
+</div>
+
+<div class="entry">
+<p class="entry-title"><span class="badge">論文</span>「大学中退後のキャリアに影響する大学入学以前の経験」『Works Review』Vol.10、2015年(リクルートワークス研究所)</p>
+<p>中退後のキャリア形成を左右する要因を分析した論文。中退=人生の終わりではなく、その後の移行を支える条件を検討する視点を持つ。</p>
+<p class="links">▶ <a href="https://www.works-i.com/research/paper/item/150603_WR10_02.pdf">本文PDF</a></p>
+</div>
+
+<h3>6-2. 経営・定員割れ・淘汰の構造</h3>
+
+<div class="entry">
+<p class="entry-title"><span class="badge">書籍</span>小川洋『消えゆく「限界大学」—私立大学定員割れの構造』白水社、2017年</p>
+<p>「限界大学」概念の出典。戦後の私学拡大の歴史から、定員割れに陥る大学の構造的要因(設置母体・立地・規模)を分析した。書名は挑発的だが、内容は淘汰を煽るものではなく構造分析である。『教育学研究』誌に書評あり。</p>
+<p class="links">▶ <a href="https://www.hakusuisha.co.jp/book/b253052.html">白水社・書誌ページ</a> / <a href="https://www.jstage.jst.go.jp/article/eds/101/0/101_215/_article/-char/ja/">書評(J-STAGE『教育学研究』)</a></p>
+</div>
+
+<div class="entry">
+<p class="entry-title"><span class="badge">書籍</span>両角亜希子『私立大学の経営と拡大・再編—1980年代後半以降の動態』東信堂、2010年/『日本の大学経営—自律的・協働的改革をめざして』東信堂、2020年</p>
+<p>私立大学経営研究の代表的研究者(東京大学)による研究書。定員割れ大学を含む私大の経営行動を実証的に分析し、経営困難=教育の質の低さではないこと、再建の経路が存在することを示す。</p>
+<p class="links">▶ <a href="https://www.toshindo-pub.com/book/91639/">東信堂・書誌ページ</a> / <a href="https://www.jstage.jst.go.jp/article/kyoiku/78/2/78_KJ00007296165/_article/-char/ja/">書評(J-STAGE)</a> / <a href="https://researchmap.jp/read0205259/published_papers?lang=ja&limit=100">researchmap(業績一覧)</a></p>
+</div>
+
+<div class="entry">
+<p class="entry-title"><span class="badge">論文</span>松宮慎治「私立大学の『定員割れ』はなぜ起こるのか」広島大学高等教育研究開発センター</p>
+<p>定員割れの発生要因を実証的に検討した研究。定員割れを大学の「怠慢」に帰する俗説に対し、18歳人口・立地・規模など構造要因の寄与を示す。</p>
+<p class="links">▶ <a href="https://rihe.hiroshima-u.ac.jp/wp/wp-content/uploads/2020/09/35d1afbb9d41e31f51585230f45f8e5c.pdf">本文PDF(広島大学RIHE)</a></p>
+</div>
+
+<div class="entry">
+<p class="entry-title"><span class="badge">論文</span>「私立大学のマネジメント改革が経営改善に与える影響」『大学経営政策研究』創刊号</p>
+<p>マネジメント改革の取り組みが経営改善につながるかを分析した論文。経営困難校にも改善の余地があることを示す実証研究。</p>
+<p class="links">▶ <a href="https://www.jstage.jst.go.jp/article/daikei/1/0/1_21/_article/-char/ja/">J-STAGE</a></p>
+</div>
+
+<div class="entry">
+<p class="entry-title"><span class="badge">論考</span>私学高等教育研究所「アルカディア学報」—「毎週のように大学が閉鎖に 大学救済よりも学生保護が最優先」ほか</p>
+<p>日本私立大学協会附置の研究所による論考シリーズ。募集停止・閉校局面における学生保護の議論など、当事者団体側の視点を押さえられる。</p>
+<p class="links">▶ <a href="https://www.shidaikyo.or.jp/riihe/research/783.html">アルカディア学報</a></p>
+</div>
+
+<h2><span class="bar"></span>7. 政府・団体の統計・調査資料</h2>
+
+<div class="entry">
+<p class="entry-title"><span class="badge">基幹統計</span>日本私立学校振興・共済事業団「私立大学・短期大学等入学志願動向」(毎年度)</p>
+<p>私大の定員充足率・定員割れ校数の最も基本的な一次資料。令和7(2025)年度版では、定員割れ私大は53.2%(前年度59.2%から改善)。規模別・地域別の集計があり、<strong>「定員割れ=小規模・地方に集中する構造問題」であること、また改善もありうる</strong>ことがデータで確認できる。</p>
+<p class="links">▶ <a href="https://www.shigaku.go.jp/s_center_d_shigandoukou.htm">調査トップページ(私学事業団)</a> / <a href="https://www.shigaku.go.jp/files/shigan_doukouR7.pdf">令和7年度版PDF</a> / <a href="https://www.keinet.ne.jp/teacher/report/kjreport/25/250815.html">河合塾による解説</a> / <a href="https://between.shinken-ad.co.jp/detail/2025/09/shidaijusoku.html">進研アドBetweenによる解説</a> / <a href="https://reseed.resemom.jp/article/2025/08/18/11513.html">ReseEd記事</a></p>
+</div>
+
+<div class="entry">
+<p class="entry-title"><span class="badge">政策資料</span>濱中義隆「大学進学機会の格差と学生等への経済的支援政策の課題」(文部科学省委託研究報告書所収、2017年)</p>
+<p>進学機会の格差と経済的支援を論じた政策研究。BF大学が「経済的に不利な層の進学機会」を支えている構図を理解するのに役立つ。</p>
+<p class="links">▶ <a href="https://www.mext.go.jp/component/a_menu/education/detail/__icsFiles/afieldfile/2017/11/29/1398333_3.pdf">本文PDF(文科省)</a></p>
+</div>
+
+<div class="entry">
+<p class="entry-title"><span class="badge">データ検証</span>石渡嶺司による定員割れ・募集停止のデータ検証記事(Yahoo!ニュース エキスパート)</p>
+<p>大学ジャーナリストによる検証記事群。「私大は5割定員割れ」報道の内実を規模・地域・学部系統別に分解して検証したものや、募集停止16校の立地・データ分析など、一次データに基づく報道として参照価値が高い。</p>
+<p class="links">▶ <a href="https://news.yahoo.co.jp/expert/articles/d380a1f8ea6970592d40f61921007293a94d0804">「私立大は5割定員割れ」を検証</a> / <a href="https://news.yahoo.co.jp/expert/articles/f20557e0b40aa58d7d66cd29168a10af149672a7">募集停止・廃校16校分析(前編)</a> / <a href="https://news.yahoo.co.jp/expert/articles/b65824149b09af1b827d39927da229739e50eafd">募集停止になる境界線</a></p>
+</div>
+
+<div class="entry">
+<p class="entry-title"><span class="badge">言説研究</span>「Fラン大学」という言葉自体を問い直す論考</p>
+<p>用語の濫用・侮蔑性を批判的に検討したメディア論考。ダイヤモンド・オンラインの記事は「Fラン大」の語の由来と誤用を整理し、Yahoo!ニュースの記事は呼称をめぐる論争を記録している。言葉のスティグマ性を論じる際の出発点になる。</p>
+<p class="links">▶ <a href="https://diamond.jp/articles/-/370129?page=2">ダイヤモンド・オンライン「『Fラン大』という言葉を考え直す」</a> / <a href="https://news.yahoo.co.jp/expert/articles/e09eea9edd835223a0aaecc04ee7d80556b3d819">Yahoo!ニュース「『Fラン大学』呼称をめぐり激論」</a> / <a href="https://ja.wikipedia.org/wiki/%E3%83%9C%E3%83%BC%E3%83%80%E3%83%BC%E3%83%95%E3%83%AA%E3%83%BC">Wikipedia「ボーダーフリー」</a></p>
+</div>
+
+<h2 id="search"><span class="bar"></span>8. 文献検索ガイド</h2>
+
+<p style="font-size:14px">「Fラン」で学術データベースを検索してもほぼヒットしない。以下のキーワードとデータベースの組み合わせが有効である。</p>
+
+<table>
+<tr><th>検索キーワード</th><th>ヒットする研究領域</th></tr>
+<tr><td>ボーダーフリー大学 / BF大学</td><td>葛城浩一らの教育実証研究(学習行動・質保証・教員)</td></tr>
+<tr><td>マージナル大学 / ノンエリート</td><td>居神浩らのキャリア教育・社会的意義論</td></tr>
+<tr><td>限界大学 / 定員割れ / 募集停止</td><td>私大経営・淘汰の構造分析</td></tr>
+<tr><td>大学全入 / ユニバーサル化 / 大衆化</td><td>高等教育論・教育社会学の枠組み研究</td></tr>
+<tr><td>初年次教育 / リメディアル教育 / 学習支援</td><td>教育実践・学習支援の効果研究</td></tr>
+<tr><td>中退 / 退学 / 学生支援</td><td>中退要因・中退後キャリアの研究</td></tr>
+<tr><td>非選抜的大学 / 大卒就職</td><td>労働研究・就職研究</td></tr>
+<tr><td>地方私立大学 / 地元占有率 / 地域貢献</td><td>地域と大学の研究</td></tr>
+</table>
+
+<p style="font-size:13px"><strong>主要データベース・機関:</strong> <a href="https://cir.nii.ac.jp/">CiNii Research</a>(国内論文の網羅検索)、<a href="https://www.jstage.jst.go.jp/">J-STAGE</a>(『高等教育研究』『大学経営政策研究』『リメディアル教育研究』等の本文公開)、<a href="https://ndlsearch.ndl.go.jp/">国立国会図書館サーチ</a>、<a href="https://researchmap.jp/">researchmap</a>(研究者の業績一覧: 葛城浩一・居神浩・両角亜希子など)、<a href="https://rihe.hiroshima-u.ac.jp/">広島大学高等教育研究開発センター(RIHE)</a>、<a href="https://ump.p.u-tokyo.ac.jp/">東京大学 大学経営・政策コース</a>、<a href="https://www.jil.go.jp/">労働政策研究・研修機構(JILPT)</a>、<a href="https://www.shigaku.go.jp/">日本私立学校振興・共済事業団</a>、<a href="https://benesse.jp/berd/">ベネッセ教育総合研究所</a>、<a href="https://www.shidaikyo.or.jp/riihe/">私学高等教育研究所</a></p>
+
+<h2><span class="bar"></span>9. まとめ — 先行研究が示す「ポジティブな再解釈」の骨格</h2>
+
+<div class="summary">
+<ul class="compact">
+<li><strong>経済学の答え:</strong> 非難関大学への進学でも投資収益率はプラス(島)。大学教育の効用は銘柄に依存せず、在学中の学びが卒後の所得・学習習慣を形づくる(濱中淳子、真鍋・島)。</li>
+<li><strong>社会学の答え:</strong> マージナル大学はノンエリート層を社会に包摂する装置であり、その存在自体に社会的意義がある(居神)。ユニバーサル段階では多様な大学の存在は必然である(トロウ以来の枠組み)。</li>
+<li><strong>教育学の答え:</strong> BF大学には教育の質保証に取り組む教員が確かに存在し(葛城)、初年次教育・リメディアル教育など多様な学生を受け止める制度も発達してきた(山田、JADE)。小規模地方私大の優れた改革事例もある(共愛学園前橋国際大学)。</li>
+<li><strong>地域政策の答え:</strong> 地方私大は地元進学機会と人材供給を支えており(DBJ、地元占有率研究)、その消失は地域の損失である。</li>
+<li><strong>データの答え:</strong> 定員割れは大学の「質の低さ」ではなく18歳人口減・立地・規模の構造問題であり(松宮、私学事業団)、改善する年もある(令和7年度)。</li>
+</ul>
+</div>
+
+<footer>
+本ページの要旨は各文献・資料の公開情報に基づく紹介であり、詳細は必ず原典を参照のこと。リンクは2026年7月13日時点で確認。<br>
+© Fラン大学は日本の宝プロジェクト｜<a href="../../">トップページへ戻る</a>
+</footer>
+
+</div>
+</body>
+</html>
