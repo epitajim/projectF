@@ -50,6 +50,7 @@ thead th .arr{color:var(--accent);font-size:10px}
 tbody td{padding:7px 8px;border-top:1px solid var(--line);vertical-align:middle;font-variant-numeric:tabular-nums}
 tbody tr.main:hover{background:#f2f6ff;cursor:pointer}
 td.n{text-align:right;white-space:nowrap}
+#tbody td{white-space:nowrap}#tbody td.stk,#tbody tr.detail td{white-space:normal}
 .uname{font-weight:700}.oname{font-size:11px;color:var(--sub)}
 .none{color:#b4bbc6}
 .tag{display:inline-block;font-size:11px;padding:1px 8px;border-radius:999px;white-space:nowrap}
@@ -123,7 +124,7 @@ footer.data h2{font-size:14px;color:var(--ink);margin:0 0 6px}
 <h1>偏差値 × 補助金 × 大学基本データ</h1>
 <p class="lead">偏差値（河合塾「2026年度入試難易度予想」）、補助金（私立大学等経常費補助金・令和7年度）、大学基本データ（学生数・学納金・各大学公表の決算）を、大学単位で1つにつないだデータベースです。<b>BF（ボーダーフリー）</b>は、不合格者が少なく合否のボーダーラインが設定できない入試方式を指し、BF方式を1つ以上もつ大学を「Fラン」として集計しています。画面右下の「チャットで質問」から、日本語で質問することもできます。</p>
 <div class="toolbar" id="toolbar">
- <input type="search" id="q" placeholder="大学名・旧称・法人名・学部学科で検索（例：松蔭　看護　赤十字）スペースで複数語" autocomplete="off">
+ <input type="search" id="q" placeholder="大学名・法人名・学部学科で検索（例：松蔭　看護　赤十字）" autocomplete="off">
  <label class="chk"><input type="checkbox" id="qent" checked> 学部・学科名も検索</label>
  <span class="tcount" id="tcount"></span>
  <button id="reset">条件をすべてクリア</button>
